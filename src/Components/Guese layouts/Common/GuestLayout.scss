@@ -1,0 +1,200 @@
+.common_layout{
+    display:flex;
+    flex-direction:row;
+
+    @media (max-width:768px){
+        display:flex;
+        flex-direction:column;
+    }
+
+
+    .brand_logo{
+        display:inline-block;
+        padding:20px;
+
+        @media (max-width){
+            width:70%;
+        }
+    }
+    .brand_img{
+        padding-left:20px;
+
+        img{
+            width:800px;
+            height:600px;
+            position:relative;
+            z-index:55;
+
+            @media  (max-width:1024px){
+                width:600px;
+            } 
+            @media (max-width:768px){
+                width:100%;
+                height:100%;
+            }
+        }
+        @media (max-width:768px){
+            padding:0px;
+        }
+    }
+    
+    .brand_foot_logo>img{
+        padding-left:20px;
+        width:500px;
+
+        @media (max-width:1024px){
+            width:400px;
+        }
+        @media (max-width:768px){
+            width:60%;
+            height:100%;
+        }
+
+    }  
+    
+    .right_side_layout{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        margin-left: -80px;
+        background:#1B202E;
+        color:#ffffff;
+
+        @media (max-width:768px){
+            margin-left:0px;
+        }
+
+        .outer_layout{
+           width:80%;
+           margin-left:80px;
+           
+           @media (max-width:768px){
+               margin-left:0px;
+               padding:20px 0px 20px 0px;
+           }
+           
+           h4{
+            font: normal normal bold 60px/80px Playfair Display;
+
+             @media (max-width:1024px){
+                font: normal normal bold 50px/50px Playfair Display;
+             }
+            }
+
+           .border{
+            border-bottom:0.1px solid lightgray;
+            margin-top:20px;
+            }
+
+            h6{
+                font-size:17px;
+                margin:24px 0px 24px 0px;
+                font-weight:inherit;
+
+                @media (max-width:1024px){
+                    font-size:15px;
+                }
+            }
+            .scroll_field{
+                height:450px;
+                overflow:scroll;
+            }
+
+            .scroll_field::-webkit-scrollbar {
+                display: none;
+              }
+
+            .belstone_formfields{
+                background:#1F283B;
+                padding:20px;
+                border-radius:5px;
+            
+
+                .form_group{
+                   display:flex;
+                   flex-direction:column;
+
+
+                   span{
+                       position:absolute;
+                       right: 55px;
+                       top:459px;
+
+                       @media (max-width:1024px){
+                           top:435px;
+                           right:45px;
+                       }
+                       @media (max-width:768px){
+                           display:none;
+                       }
+                   }
+                   textarea{
+                       background:#3F4B65 ;
+                       padding:15px;
+                       border-radius:5px;
+                       border:none;
+                       outline:none;
+                       font-size:17px;
+                       color:white;
+                       resize:none;
+                   }
+                   textarea::-webkit-scrollbar {
+                    display: none;
+                  }
+                }
+                .input_fields{
+                    display:flex;
+                    flex-direction:row;
+                    margin-top:10px;
+
+                    input{
+                        width: 50px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 2px;
+                        outline: none;
+                        margin-right: 13px;
+                        background: #3F4B65;
+                        color: white;
+                        font-size: 20px;
+                        text-align: center;
+                    
+                    }
+                }
+
+                .link_tag{
+                    float:right;
+
+                    a{
+                        text-decoration: none;
+                        color:#4DB3D0;
+                        
+                    }
+                }
+
+                .btn{
+                    width:100%;
+                    color:white;
+                    background:#4DB3D0;
+                    border:none;
+                    outline:none;
+                    padding:15px;
+                    border-radius:5px;
+                    margin-top:20px;
+                    margin-bottom:20px;
+                }
+
+                .login_footer_text{
+                    text-align:center;
+
+                    a{
+                        text-decoration: none;
+                        color:#4DB3D0;
+                    }
+                }
+            }
+        }
+    }
+    
+}

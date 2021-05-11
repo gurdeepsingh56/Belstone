@@ -1,0 +1,15 @@
+.onboarding__input{
+    display:flex;
+    flex-direction: column;
+
+    input{
+        padding:15px;
+        border-radius:5px;
+        border:none;
+        outline:none;
+        margin:10px 0px 20px 0px;
+        background:#3F4B65;
+        font-size:15px;
+        color:white;
+    }
+}
