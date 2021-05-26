@@ -12,16 +12,19 @@ import imglogo from '../../Assets/icons/Path 1.svg'
 import './Common.scss'
 
 function Common({Component:Comp,...rest}) {
+
+
+
     
     useEffect(() => {
         var dropdown = document.getElementsByClassName("dropdown-btn");
         
-
         for ( let i = 0; i < dropdown.length; i++) {
            dropdown[i].addEventListener("click", function() {
             
 
            var dropdownContent = this.nextElementSibling;
+           
            if (dropdownContent.style.display === "flex") {
               dropdownContent.style.display = "none";
 
@@ -35,19 +38,18 @@ function Common({Component:Comp,...rest}) {
     }, [])
 
    
-
     return (
         <div className="main_div">
             <div className="left">
                 <div className="brand_logo">
                     <img src={logo} alt="logo"></img>
                 </div>
-            
-                <div className="sidenav">
+                
+                <div className="sidenav"  >
                    <div className="dropdown_div">
                     <button className="dropdown-btn">
                        <img src={house} alt="house"></img>
-                       Multi Housing
+                        <p>Multi Housing</p>
                        <img src={arrow} alt="arrow" className="side icon" ></img>
                     </button>
                     <div className="dropdown-container">
@@ -58,7 +60,7 @@ function Common({Component:Comp,...rest}) {
                    <div className="dropdown_div">
                     <button className="dropdown-btn">
                        <img src={hospitality} alt="hospitality"></img>
-                       Hospitality
+                       <p>Hospitality</p>
                        <img src={arrow} alt="arrow" className="sidearrow icon" ></img>
                     </button>
                     <div className="dropdown-container">
@@ -71,15 +73,18 @@ function Common({Component:Comp,...rest}) {
                         <Link to="/bruskin">Bruskin</Link>
                     </div>
                    </div>
-                    <button className="logout_btn">
+                   <Link to="/">
+                       <button className="logout_btn">
                        <img src={logout} alt="logout"></img>
-                       Logout
+                       <p>Logout</p>
                     </button>
-                </div>
+                   </Link>                   
+                </div> 
+                       
             </div>
             <div className="center">
                 <div className="searchinput">
-                    <img src={menu} alt="menu"></img>
+                    <img src={menu} alt="menu"   className="sidemenu"></img>
                     <input type="text" ></input>
                     <img src={search} alt="search" className="search"></img>
                 </div>

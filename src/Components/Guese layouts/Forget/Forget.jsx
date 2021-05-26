@@ -1,9 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Input from '../../../Input/Input'
+import Input from '../../../Shared/Input/Input'
 import Button from '../../../Button/Button'
 
 function Forget() {
+   
     return (
         <>
          <div className="outer_layout">
@@ -20,7 +21,7 @@ function Forget() {
                       label="Email Address"
                       placeholder="Enter Email Address"
                       id="email"
-
+                      
                     />
 
                     <Button label="SUBMIT" />

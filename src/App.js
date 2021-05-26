@@ -19,6 +19,8 @@ import Register from './Components/Guese layouts/Register/Register'
 import Reset from './Components/Guese layouts/Reset Password/Reset'
 import Verification from './Components/Guese layouts/Verification/Verification'
 import Vanities from './Components/layouts/Vanities/Vanities'
+import Modal from './Shared/Modal/Modal'
+
 
 
 
@@ -44,6 +46,9 @@ function App() {
         <Common exact path="/sinks" Component={sinks} />
         <Common exact path="/surroundstone" Component={surroundstone} />
         <Common exact path="/Bruskin" Component={Bruskin} />
+
+        <Modal exact path="/Modal" />
+
       </Switch>
     </BrowserRouter>
   )

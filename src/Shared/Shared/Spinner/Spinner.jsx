@@ -1,0 +1,13 @@
+import React from 'react'
+import './Spinner.scss'
+
+
+function Spinner() {
+    return (
+        <div className="spinner-container">
+            <div className="loading"></div>
+        </div>
+    )
+}
+
+export  {Spinner}

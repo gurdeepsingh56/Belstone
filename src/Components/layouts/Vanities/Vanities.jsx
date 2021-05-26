@@ -2,9 +2,12 @@ import React ,{useState }from 'react'
 import quote from '../../../Assets/icons/ic_saved.svg'
 import question from '../../../Assets/icons/question.svg'
 import Mask from '../../../Assets/images/Mask.png'
+import Modal from '../../../Shared/Modal/Modal'
 
 
 function Vanities() {
+
+    const[show ,setShow]=useState(false)
     
     return (
         <div className="outside_div">
@@ -21,7 +24,7 @@ function Vanities() {
                 <div className="inner_div">
                     <div className="common_div">
                         <div className="heading">
-                           <p>Edge</p> 
+                           <p><b>Edge</b></p> 
                            <img src={question} alt="question" />
                         </div>
                         <div class="buttons">
@@ -37,7 +40,7 @@ function Vanities() {
                     </div>
                     <div className="common_div">
                         <div className="heading">
-                            <p>Collections</p>
+                            <p><b>Collections</b></p>
                             <img src={question} alt="question" />
                         </div>
                         
@@ -53,8 +56,9 @@ function Vanities() {
                         <div className="border"></div>
 
                         <div className="heading">
-                            <p>Luxe</p>
-                            <small>See All</small> 
+                            <p><b>Luxe</b></p>
+                            <button className="show-popup-button" onClick={()=>setShow(true)}>See All</button>
+                            <Modal show={show} onClose={()=>setShow(false)}/> 
                         </div>
 
                         <div className="card_container">

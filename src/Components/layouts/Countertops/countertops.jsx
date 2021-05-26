@@ -16,7 +16,7 @@ function Countertops() {
             <div className="inner_div">
                 <div className="common_div">
                     <div className="heading">
-                       <p>Edge</p> 
+                       <p><b>Edge</b></p> 
                        <img src={question} alt="question" />
                     </div>
                     <div class="buttons">
@@ -32,7 +32,7 @@ function Countertops() {
                 </div>
                 <div className="common_div">
                     <div className="heading">
-                        <p>Collections</p>
+                        <p><b>Collections</b></p>
                         <img src={question} alt="question" />
                     </div>
                     
@@ -69,13 +69,19 @@ function Countertops() {
                             
                         </select>
                     </div>
-                    <div > 
-                       <button type="submit" className="btn_primary">CALCULATE NOW</button>
-                       <button type="submit" className="btn_secondary">ADD TO QUOTE</button>
+
+                    <div className="d-flex"> 
+                        <div>
+                         <button type="submit" className="btn_primary">CALCULATE NOW</button>
+                         <button type="submit" className="btn_secondary">ADD TO QUOTE</button>
+                        </div>
+
+                      <h3>$108.50</h3>
+
                     </div>
                    
                     
-                    <h3>$108.50</h3>
+                    
                   </div>
                 </div>
                 <div className="common_div">

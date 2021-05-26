@@ -69,16 +69,13 @@ function kitchen() {
                             
                         </select>
                     </div>
-                       <div >
-                       <button type="submit" className="btn_primary">CALCULATE NOW</button>
-                       <button type="submit" className="btn_secondary">ADD TO QUOTE</button>
-                    
-                       </div>
-                      
+                    <div className="d-flex">
+                        <div>
+                           <button type="submit" className="btn_primary">CALCULATE NOW</button>
+                           <button type="submit" className="btn_secondary">ADD TO QUOTE</button>
+                        </div>
                        <h3>$108.50</h3>
-
-                
-                       
+                    </div>    
                   </div>
                 </div>
                 <div className="common_div">

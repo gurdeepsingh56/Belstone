@@ -17,7 +17,7 @@ function vanity() {
             <div className="inner_div">
                 <div className="common_div">
                     <div className="heading">
-                       <p>Material Type</p> 
+                       <p><b>Material Type</b></p> 
                        <img src={question} alt="question" />
                     </div>
                     <div class="buttons">

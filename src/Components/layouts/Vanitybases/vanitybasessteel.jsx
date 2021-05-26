@@ -17,7 +17,7 @@ function vanitybaseswood() {
             <div className="inner_div">
                 <div className="common_div">
                     <div className="heading">
-                       <p>Material Type</p> 
+                       <p><b>Material Type</b></p> 
                        <img src={question} alt="question" />
                     </div>
                     <div class="buttons">
@@ -60,14 +60,13 @@ function vanitybaseswood() {
                             <option value="No Shelf">No Shelf</option>    
                         </select>
                     </div>
-                    <div>
-                    <button type="submit" className="btn_primary">CALCULATE NOW</button>
-                    <button type="submit" className="btn_secondary">ADD TO QUOTE</button>
-
+                    <div className="d-flex">
+                      <div>
+                        <button type="submit" className="btn_primary">CALCULATE NOW</button>
+                        <button type="submit" className="btn_secondary">ADD TO QUOTE</button>
+                      </div>
+                      <h3>$108.50</h3>
                     </div>
-                   
-                    
-                    <h3>$108.50</h3>
                   </div>
                 </div>
                 <div className="common_div">
@@ -78,7 +77,7 @@ function vanitybaseswood() {
                         </div>
                         <div className="form-control">
                             <label htmlFor="color">Stainless Steel</label>
-                            <button id="color" className="btnwood btn">Standerd</button>
+                            <button id="color" className="btn">Standerd</button>
                         </div>
                         <div className="form-control">
                             <label htmlFor="luxe">Length</label>

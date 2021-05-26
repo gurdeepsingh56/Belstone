@@ -1,7 +1,7 @@
 import React from 'react'
 import './Input.scss'
 
-function Input({type , id ,label ,placeholder}) {
+function Input({type , id ,label ,placeholder , onChange}) {
     return (
         <>
         <div className="onboarding__input form-control">
@@ -11,6 +11,7 @@ function Input({type , id ,label ,placeholder}) {
                placeholder={placeholder}
                id={id}
                label={label}
+               onChange={onChange}
                required
             />
         </div>

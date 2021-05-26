@@ -1,0 +1,24 @@
+.toast {
+    position: absolute !important;
+    width: 100% !important;
+    top: 4px !important;
+    right: 4px !important;
+    max-width: 430px !important;
+    .toast-header {
+        padding: 1rem 2rem !important;
+        strong {
+            font-size: 18px;
+        }
+        .close {
+          span {
+            font-size: 20px;
+          }
+        }
+    }
+    .toast-body {
+        font-size: 18px;
+        font-weight: 600;
+        color: #6c757d !important;
+        padding: 1.5rem 2rem !important;
+    }
+}

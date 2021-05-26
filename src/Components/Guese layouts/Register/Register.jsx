@@ -1,7 +1,7 @@
 import React from 'react'
-import Input from '../../../Input/Input'
+import Input from '../../../Shared/Input/Input'
 import Button from '../../../Button/Button'
-import Textarea from '../../../Textarea/Textarea'
+import Textarea from '../../../Shared/Textarea/Textarea'
 
 function Register() {
     return (
